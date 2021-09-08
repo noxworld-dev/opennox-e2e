@@ -260,4 +260,319 @@ steps:
   - name: "con01-027 Broken wall"
     action: screen
     dt: 5
+  - name: "Run to barrel"
+    action: run
+    ang: 0.30
+    dt: 35
+  - name: "Hit barrel a few times"
+    action: melee
+    ang: 0.25
+  - action: melee
+    ang: 0.25
+    dt: 6
+  - name: "Run to chest"
+    action: run
+    ang: -0.2
+    dt: 19
+  - name: "Pickup gold"
+    action: interact
+    x: 572
+    y: 371
+    dt: 10
+  - name: "Open the chest"
+    action: interact
+    x: 509
+    y: 339
+  - name: "Pickup gold"
+    action: interact
+    x: 470
+    y: 350
+    dt: 2
+  - name: "Run out of the secret area"
+    action: run-start
+    ang: 1.15
+    dt: 50
+  - action: run-dir
+    ang: -0.10
+    dt: 55
+  - action: run-dir
+    ang: -0.25
+    dt: 50
+  - action: run-dir
+    ang: 0.1
+    dt: 50
+  - name: "Run to the room with an urchin"
+    action: run-dir
+    ang: -0.25
+    dt: 30
+  - name: "Run past him, see if he hears us"
+    action: run-dir
+    ang: -0.6
+    dt: 50
+  - name: "Run towards him"
+    action: run-dir
+    ang: 0.0
+    dt: 40
+  - action: run-stop
+  - name: "Stop, let pixie chase him"
+    action: wait
+    dt: 13
+  - name: "Run into the room"
+    action: run
+    ang: -0.25
+    dt: 25
+  - name: "Walk closer to the barrel"
+    action: walk
+    ang: 0.25
+    dt: 10
+  - name: "Pickup boots"
+    action: interact
+    x: 473
+    y: 362
+  - name: "Hit barrel a few times"
+    action: melee
+    ang: 0.25
+    dt: 2
+  - action: melee
+    ang: 0.25
+    dt: 6
+  - name: "Pickup apple"
+    action: interact
+    x: 514
+    y: 350
+    dt: 6
+  - name: "Run out of the room"
+    action: run-start
+    ang: 0.85
+    dt: 32
+  - action: run-dir
+    ang: -0.75
+    dt: 55
+  - name: "Run to the box and push it"
+    action: run-dir
+    ang: -0.25
+    dt: 40
+  - name: "Finally jump over it"
+    action: jump
+  - action: run-dir
+    ang: 0.15
+    dt: 30
+  - action: run-stop
+  - name: "Stop near the crystal"
+    action: wait
+    dt: 5
+  - name: "Walk to the chest"
+    action: walk
+    ang: -0.25
+    dt: 10
+  - name: "Open it"
+    action: interact
+    x: 468
+    y: 352
+  - name: "Pickup gold"
+    action: interact
+    x: 465
+    y: 401
+    dt: 2
+  - name: "Run out of the room"
+    action: run-start
+    ang: 0.9
+    dt: 30
+  - action: jump
+  - action: run-dir
+    ang: 0.75
+    dt: 30
+  - action: run-dir
+    ang: -0.75
+    dt: 60
+  - action: run-stop
+  - name: "Wait for the explosion cutscene"
+    action: wait
+    dt: 100
+  - name: "Push the water barrel"
+    action: run-start
+    ang: -0.3
+    dt: 20
+  - action: run-dir
+    ang: -0.6
+    dt: 20
+  - action: run-stop
+  - name: "Wait for barrel to put out fire"
+    action: wait
+    dt: 5
+  - name: "Run through the flame"
+    action: run-start
+    ang: -0.5
+    dt: 3
+  - action: jump
+  - action: run-dir
+    ang: -0.5
+    dt: 55
+  - action: run-dir
+    ang: 0.0
+    dt: 65
+  - action: run-stop
+  - name: "Pickup Lesser Heal spell"
+    action: interact
+    x: 490
+    y: 378
+  - name: "Skip the spell animation"
+    action: esc
+  - name: "Close the book"
+    action: esc
+    dt: 1
+  - name: "Run out of the room"
+    action: run-start
+    ang: 1.0
+    dt: 75
+  - action: run-dir
+    ang: -0.75
+    dt: 45
+  - name: "Take left turn, let the bat chase us"
+    action: run-dir
+    ang: 0.75
+    dt: 40
+  - action: run-dir
+    ang: 0.5
+    dt: 50
+  - action: run-stop
+  - name: "Pickup silver key"
+    action: interact
+    x: 455
+    y: 353
+  - name: "Run back, keep ignoring the bat"
+    action: run-start
+    ang: -0.5
+    dt: 50
+  - action: run-dir
+    ang: -0.25
+    dt: 40
+  - action: run-dir
+    ang: -0.15
+    dt: 25
+  - name: "Cast Pixies"
+    action: cast
+    slot: 1
+  - action: run-dir
+    ang: -0.25
+    dt: 80
+  - action: run-stop
+  - name: "Wait for boulder to stop"
+    action: wait
+    dt: 30
+  - name: "Jump into the hole"
+    action: walk
+    ang: 0.0
+    dt: 20
+  - action: wait
+    dt: 15
+  - name: "Walk closer to the tunic"
+    action: walk
+    ang: -0.2
+    dt: 30
+  - name: "Pickup tunic"
+    action: interact
+    x: 511
+    y: 355
+  - name: "Run to the next room"
+    action: run-start
+    ang: -0.75
+    dt: 40
+  - name: "The first urchin will die from a pixie"
+    action: run-dir
+    ang: 0.90
+    dt: 30
+  - name: "Hit the second urchin"
+    action: melee
+    ang: 0.75
+  - action: run-stop
+  - name: "Wait for the urchin flee, turn and hit us with a stone"
+    action: wait
+    dt: 60
+  - name: "Cast Pixies"
+    action: cast
+    slot: 1
+  - name: "Run to the button"
+    action: run-start
+    ang: 0.6
+    dt: 30
+  - name: "Run to the elevator"
+    action: run-dir
+    ang: -0.75
+    dt: 20
+  - action: run-stop
+  - name: "Wait for elevator to come down"
+    action: wait
+    dt: 60
+  - name: "Walk into it"
+    action: walk
+    ang: 0.75
+    dt: 10
+  - name: "Wait for elevator to raise up"
+    action: wait
+    dt: 60
+  - name: "Run out of the elevator"
+    action: run-start
+    ang: 0.75
+    dt: 30
+    # TODO: some lights bug, screen it
+  - name: "Run to the door to check unlocking"
+    action: run-dir
+    ang: 0.25
+    dt: 60
+  - name: "Run back"
+    action: run-dir
+    ang: -0.75
+    dt: 55
+  - action: run-dir
+    ang: 0.75
+    dt: 100
+  - name: "Cast heal, but fail: no mana"
+    action: cast
+    slot: 2
+  - action: run-dir
+    ang: -0.75
+    dt: 25
+  - name: "Run to the second secret wall"
+    action: run-dir
+    ang: -0.25
+    dt: 20
+  - name: "Hit the wall"
+    action: melee
+    ang: -0.25
+  - action: run-dir
+    ang: -0.25
+    dt: 20
+  - action: run-stop
+  - name: "Open chest, while waiting for spider to go back"
+    action: interact
+    x: 456
+    y: 372
+  - name: "Pick gold"
+    action: interact
+    x: 456
+    y: 415
+    dt: 2
+  - name: "Walk to mana crystal"
+    action: walk
+    ang: 0.3
+    dt: 10
+  - name: "Cast heal"
+    action: cast
+    slot: 2
+  - name: "Wait a bit to check that spider goes back"
+    action: wait
+    dt: 40
+  - name: "Run further"
+    action: run-start
+    ang: 0.78
+    dt: 50
+  - name: "Cast pixies"
+    action: cast
+    slot: 1
+  - action: run-dir
+    ang: 0.75
+    dt: 60
+  - action: run-stop
+  # TODO: we should check that door to the left is locked, since we unlocked the previous one
   - action: quit
