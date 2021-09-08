@@ -202,15 +202,15 @@ but not the other way around.
   - name: "Walk out of the bear cave"
     action: walk-start
     ang: -0.35
+    dt: 50
   - name: "Walk to the elevator"
     action: walk-dir
     ang: -0.20
-    dt: 50
+    dt: 60
   - action: walk-dir
     ang: -0.30
-    dt: 60
-  - action: walk-stop
     dt: 17
+  - action: walk-stop
 ```
 
 ### run-start
@@ -225,15 +225,15 @@ and finally `run-stop` will make the character stop.
   - name: "Run out of the bear cave"
     action: run-start
     ang: -0.35
+    dt: 50
   - name: "Run to the elevator"
     action: run-dir
     ang: -0.20
-    dt: 50
+    dt: 60
   - action: run-dir
     ang: -0.30
-    dt: 60
-  - action: run-stop
     dt: 17
+  - action: run-stop
 ```
 
 ### inventory

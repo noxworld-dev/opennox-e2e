@@ -132,24 +132,24 @@ steps:
   - name: "Run into the cave"
     action: run-start
     ang: 0.25
-  - action: run-dir
-    ang: 0.5
     dt: 40
   - name: "con01-010 Cave entrance"
     action: screen
   - action: run-dir
-    ang: 0.95
+    ang: 0.5
     dt: 40
   - action: run-dir
-    ang: 0.5
+    ang: 0.95
     dt: 35
+  - action: run-dir
+    ang: 0.5
+    dt: 15
   - name: "con01-011 Before bear"
     action: screen
-    dt: 15
   - action: run-dir
     ang: 0.3
-  - action: run-stop
     dt: 52
+  - action: run-stop
   - name: "con01-012 Bear 1"
     action: screen
     dt: 55
@@ -185,21 +185,21 @@ steps:
   - name: "Run out of the bear cave"
     action: run-start
     ang: -0.35
+    dt: 50
   - name: "Run to the elevator"
     action: run-dir
     ang: -0.20
-    dt: 50
+    dt: 60
   - action: run-dir
     ang: -0.30
     dt: 60
   - name: "con01-019 Elevator"
     action: screen
-    dt: 60
   - name: "Walk to the button"
     action: run-dir
     ang: -0.25
-  - action: run-stop
     dt: 17
+  - action: run-stop
   - name: "Enable elevator"
     action: interact
     x: 494
@@ -217,14 +217,14 @@ steps:
   - name: "Walk out of the elevator"
     action: walk-start
     ang: 0.5
+    dt: 40
   - name: "con01-022 Elevator out"
     action: screen
-    dt: 40
   - name: "Run to the spellbook"
     action: run-dir
     ang: 0.25
-  - action: run-stop
     dt: 65
+  - action: run-stop
   - name: "Pickup the book"
     action: interact
     x: 489
@@ -241,19 +241,19 @@ steps:
   - name: "con01-025 Casting"
     action: screen
     dt: 5
+  - name: "Close book"
+    action: esc
   - name: "Run to the next room"
     action: run-start
     ang: 0.0
-  - name: "Close book"
-    action: esc
+    dt: 50
   - name: "con01-026 Pixies"
     action: screen
-    dt: 50
   - name: "Run to the secret wall"
     action: run-dir
     ang: 0.35
-  - action: run-stop
     dt: 80
+  - action: run-stop
   - name: "Hit wall"
     action: melee
     ang: 0.25
