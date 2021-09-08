@@ -1,0 +1,263 @@
+steps:
+  ############################################################
+  ##                        MENU
+  ############################################################
+  - name: "Skip logo"
+    action: click
+    x: 100
+    y: 100
+    dt: 30
+  - name: "menu-000 Main menu"
+    action: screen
+    dt: 3
+  - name: "Open options"
+    action: click
+    x: 368
+    y: 731
+  - name: "menu-001 Options"
+    action: screen
+    dt: 7
+  - name: "Go back"
+    action: click
+    x: 710
+    y: 731
+  - name: "Solo"
+    action: click
+    x: 381
+    y: 174
+    dt: 6
+  - name: "New game"
+    action: click
+    x: 282
+    y: 603
+    dt: 7
+  - name: "menu-002 Class"
+    action: screen
+    dt: 8
+  - name: "Conjurer"
+    action: interact
+    x: 506
+    y: 205
+  - name: "menu-003 Class select"
+    action: screen
+  - name: "Accept class"
+    action: click
+    x: 500
+    y: 658
+    dt: 1
+  - name: "menu-004 Character"
+    action: screen
+    dt: 8
+  - name: "Accept character"
+    action: click
+    x: 377
+    y: 601
+  ############################################################
+  ##                        CON01
+  ############################################################
+  - name: "con01-000 Briefing fade in"
+    action: screen
+    dt: 8
+  - name: "con01-001 Briefing"
+    action: screen
+    dt: 8
+  - name: "con01-002 Briefing fade out"
+    action: screen
+    dt: 8
+  - name: "con01-003 Level fade in"
+    action: screen
+    dt: 12
+  - name: "con01-004 Captain dialog"
+    action: screen
+    dt: 10
+  - name: "Close captain dialog"
+    action: click
+    x: 769
+    y: 755
+  - name: "Wait for save"
+    action: wait
+    dt: 22
+  - name: "con01-005 Initial save"
+    action: screen
+  - name: "Run down"
+    action: run
+    ang: 1.0
+    dt: 20
+  - name: "Run up"
+    action: run
+    ang: 0.0
+    dt: 20
+  - name: "Run right"
+    action: walk
+    ang: 0.5
+    dt: 20
+  - name: "Run left"
+    action: walk
+    ang: -0.5
+    dt: 20
+  - name: "con01-006 Drift check"
+    action: screen
+  - name: "Speak to captain again"
+    action: interact
+    x: 489
+    y: 311
+  - name: "con01-007 Captain dialog 2"
+    action: screen
+    dt: 1
+  - name: "Close captain dialog"
+    action: click
+    x: 769
+    y: 755
+  - name: "Run to items"
+    action: run
+    ang: 0.26
+    dt: 22
+  - name: "con01-008 Before pickup"
+    action: screen
+  - name: "Pickup meat"
+    action: interact
+    x: 500
+    y: 355
+  - name: "Pickup apple"
+    action: interact
+    x: 534
+    y: 351
+  - name: "Click on the sign"
+    action: interact
+    x: 575
+    y: 382
+  - name: "con01-009 After pickup"
+    action: screen
+    dt: 1
+  - name: "Run into the cave"
+    action: run-start
+    ang: 0.25
+  - action: run-dir
+    ang: 0.5
+    dt: 40
+  - name: "con01-010 Cave entrance"
+    action: screen
+  - action: run-dir
+    ang: 0.95
+    dt: 40
+  - action: run-dir
+    ang: 0.5
+    dt: 35
+  - name: "con01-011 Before bear"
+    action: screen
+    dt: 15
+  - action: run-dir
+    ang: 0.3
+  - action: run-stop
+    dt: 52
+  - name: "con01-012 Bear 1"
+    action: screen
+    dt: 55
+  - name: "con01-013 Bear 2"
+    action: screen
+    dt: 110
+  - name: "con01-014 Bear 3"
+    action: screen
+    dt: 20
+  - name: "con01-015 Bear 4"
+    action: screen
+    dt: 18
+  - name: "Run into the bear cave"
+    action: run
+    ang: 0.65
+    dt: 50
+  - name: "con01-016 Bear cave"
+    action: screen
+  - name: "Pickup gold"
+    action: interact
+    x: 536
+    y: 387
+  - name: "con01-017 Picked gold"
+    action: screen
+    dt: 2
+  - name: "Open inventory"
+    action: inventory
+  - name: "con01-018 Inventory"
+    action: screen
+    dt: 5
+  - name: "Close inventory"
+    action: inventory
+  - name: "Run out of the bear cave"
+    action: run-start
+    ang: -0.35
+  - name: "Run to the elevator"
+    action: run-dir
+    ang: -0.20
+    dt: 50
+  - action: run-dir
+    ang: -0.30
+    dt: 60
+  - name: "con01-019 Elevator"
+    action: screen
+    dt: 60
+  - name: "Walk to the button"
+    action: run-dir
+    ang: -0.25
+  - action: run-stop
+    dt: 17
+  - name: "Enable elevator"
+    action: interact
+    x: 494
+    y: 308
+  - name: "con01-020 Elevator enabled"
+    action: screen
+    dt: 5
+  - name: "Walk into the elevator"
+    action: walk
+    ang: 0.70
+    dt: 20
+  - name: "con01-021 Elevator down"
+    action: screen
+    dt: 10
+  - name: "Walk out of the elevator"
+    action: walk-start
+    ang: 0.5
+  - name: "con01-022 Elevator out"
+    action: screen
+    dt: 40
+  - name: "Run to the spellbook"
+    action: run-dir
+    ang: 0.25
+  - action: run-stop
+    dt: 65
+  - name: "Pickup the book"
+    action: interact
+    x: 489
+    y: 336
+  - name: "con01-023 First spell"
+    action: screen
+    dt: 100
+  - name: "con01-024 Spell granted"
+    action: screen
+    dt: 40
+  - name: "Cast pixies"
+    action: cast
+    slot: 1
+  - name: "con01-025 Casting"
+    action: screen
+    dt: 5
+  - name: "Run to the next room"
+    action: run-start
+    ang: 0.0
+  - name: "Close book"
+    action: esc
+  - name: "con01-026 Pixies"
+    action: screen
+    dt: 50
+  - name: "Run to the secret wall"
+    action: run-dir
+    ang: 0.35
+  - action: run-stop
+    dt: 80
+  - name: "Hit wall"
+    action: melee
+    ang: 0.25
+  - name: "con01-027 Broken wall"
+    action: screen
+    dt: 5
+  - action: quit
