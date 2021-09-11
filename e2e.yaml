@@ -274,6 +274,8 @@ steps:
     action: run
     ang: -0.2
     dt: 19
+  - name: "con01-028 Barrel loot and chest"
+    action: screen
   - name: "Pickup gold"
     action: interact
     x: 572
@@ -298,6 +300,8 @@ steps:
   - action: run-dir
     ang: -0.25
     dt: 50
+  - name: "con01-029 Spider"
+    action: screen
   - action: run-dir
     ang: 0.1
     dt: 50
@@ -309,14 +313,20 @@ steps:
     action: run-dir
     ang: -0.6
     dt: 50
+  - name: "con01-030 Urchin"
+    action: screen
   - name: "Run towards him"
     action: run-dir
     ang: 0.0
     dt: 40
+  - name: "con01-031 Urchin close"
+    action: screen
   - action: run-stop
   - name: "Stop, let pixie chase him"
     action: wait
     dt: 13
+  - name: "con01-032 Urchin dead"
+    action: screen
   - name: "Run into the room"
     action: run
     ang: -0.25
@@ -336,6 +346,8 @@ steps:
   - action: melee
     ang: 0.25
     dt: 6
+  - name: "con01-033 Urchin room loot"
+    action: screen
   - name: "Pickup apple"
     action: interact
     x: 514
@@ -352,11 +364,15 @@ steps:
     action: run-dir
     ang: -0.25
     dt: 40
+  - name: "con01-034 Pushed box"
+    action: screen
   - name: "Finally jump over it"
     action: jump
   - action: run-dir
     ang: 0.15
     dt: 30
+  - name: "con01-035 Jump over"
+    action: screen
   - action: run-stop
   - name: "Stop near the crystal"
     action: wait
@@ -374,6 +390,8 @@ steps:
     x: 465
     y: 401
     dt: 2
+  - name: "con01-036 More loot"
+    action: screen
   - name: "Run out of the room"
     action: run-start
     ang: 0.9
@@ -384,11 +402,23 @@ steps:
     dt: 30
   - action: run-dir
     ang: -0.75
-    dt: 60
+    dt: 30
+  - name: "con01-037 Before explosion"
+    action: screen
+  - action: run-dir
+    ang: -0.75
+    dt: 30
   - action: run-stop
+  - name: "con01-038 Explosion cutscene"
+    action: screen
   - name: "Wait for the explosion cutscene"
     action: wait
-    dt: 100
+    dt: 50
+  - name: "con01-039 Explosion"
+    action: screen
+  - name: "Wait for the explosion cutscene"
+    action: wait
+    dt: 50
   - name: "Push the water barrel"
     action: run-start
     ang: -0.3
@@ -397,6 +427,8 @@ steps:
     ang: -0.6
     dt: 20
   - action: run-stop
+  - name: "con01-040 Water puts out fire"
+    action: screen
   - name: "Wait for barrel to put out fire"
     action: wait
     dt: 5
@@ -404,10 +436,14 @@ steps:
     action: run-start
     ang: -0.5
     dt: 3
+  - name: "con01-041 Fire damage"
+    action: screen
   - action: jump
   - action: run-dir
     ang: -0.5
     dt: 55
+  - name: "con01-042 After fire"
+    action: screen
   - action: run-dir
     ang: 0.0
     dt: 65
@@ -421,6 +457,8 @@ steps:
   - name: "Close the book"
     action: esc
     dt: 1
+  - name: "con01-043 Got Lesser Heal spell"
+    action: screen
   - name: "Run out of the room"
     action: run-start
     ang: 1.0
@@ -432,6 +470,8 @@ steps:
     action: run-dir
     ang: 0.75
     dt: 40
+  - name: "con01-044 Bat chasing"
+    action: screen
   - action: run-dir
     ang: 0.5
     dt: 50
@@ -440,6 +480,8 @@ steps:
     action: interact
     x: 455
     y: 353
+  - name: "con01-045 Picked key"
+    action: screen
   - name: "Run back, keep ignoring the bat"
     action: run-start
     ang: -0.5
@@ -457,15 +499,23 @@ steps:
     ang: -0.25
     dt: 80
   - action: run-stop
+  - name: "con01-046 Pushed boulder"
+    action: screen
   - name: "Wait for boulder to stop"
     action: wait
     dt: 30
+  - name: "con01-047 Boulder inertia"
+    action: screen
   - name: "Jump into the hole"
     action: walk
     ang: 0.0
     dt: 20
+  - name: "con01-048 Jump down"
+    action: screen
   - action: wait
     dt: 15
+  - name: "con01-049 After jump"
+    action: screen
   - name: "Walk closer to the tunic"
     action: walk
     ang: -0.2
@@ -474,10 +524,14 @@ steps:
     action: interact
     x: 511
     y: 355
+  - name: "con01-049 Wearing tunic"
+    action: screen
   - name: "Run to the next room"
     action: run-start
     ang: -0.75
     dt: 40
+  - name: "con01-050 Two urchins"
+    action: screen
   - name: "The first urchin will die from a pixie"
     action: run-dir
     ang: 0.90
@@ -485,41 +539,78 @@ steps:
   - name: "Hit the second urchin"
     action: melee
     ang: 0.75
+  - name: "con01-051 Urchins 1"
+    action: screen
   - action: run-stop
+  - name: "con01-052 Urchins 2"
+    action: screen
   - name: "Wait for the urchin flee, turn and hit us with a stone"
     action: wait
-    dt: 60
+    dt: 30
+  - name: "con01-053 Urchins 3"
+    action: screen
+  - action: wait
+    dt: 30
+  - name: "con01-054 Urchins 4"
+    action: screen
   - name: "Cast Pixies"
     action: cast
     slot: 1
   - name: "Run to the button"
     action: run-start
     ang: 0.6
-    dt: 30
+    dt: 10
+  - name: "con01-055 Urchins 5"
+    action: screen
+  - action: run-dir
+    ang: 0.6
+    dt: 20
+  - name: "con01-056 Elevator button"
+    action: screen
   - name: "Run to the elevator"
     action: run-dir
     ang: -0.75
     dt: 20
+  - name: "con01-057 To the elevator"
+    action: screen
   - action: run-stop
   - name: "Wait for elevator to come down"
     action: wait
     dt: 60
+  - name: "con01-058 Elevator down"
+    action: screen
   - name: "Walk into it"
     action: walk
     ang: 0.75
     dt: 10
+  - name: "con01-059 Elevator 1"
+    action: screen
   - name: "Wait for elevator to raise up"
     action: wait
-    dt: 60
+    dt: 20
+  - name: "con01-060 Elevator 2"
+    action: screen
+  - action: wait
+    dt: 20
+  - name: "con01-061 Elevator 3"
+    action: screen
+  - action: wait
+    dt: 20
+  - name: "con01-062 Elevator 4"
+    action: screen
   - name: "Run out of the elevator"
     action: run-start
     ang: 0.75
     dt: 30
+  - name: "con01-063 Out of elevator"
+    action: screen
     # TODO: some lights bug, screen it
   - name: "Run to the door to check unlocking"
     action: run-dir
     ang: 0.25
     dt: 60
+  - name: "con01-064 Unlocked door"
+    action: screen
   - name: "Run back"
     action: run-dir
     ang: -0.75
@@ -533,10 +624,14 @@ steps:
   - action: run-dir
     ang: -0.75
     dt: 25
+  - name: "con01-065 No mana"
+    action: screen
   - name: "Run to the second secret wall"
     action: run-dir
     ang: -0.25
     dt: 20
+  - name: "con01-066 Before wall"
+    action: screen
   - name: "Hit the wall"
     action: melee
     ang: -0.25
@@ -544,6 +639,8 @@ steps:
     ang: -0.25
     dt: 20
   - action: run-stop
+  - name: "con01-067 Spider chase"
+    action: screen
   - name: "Open chest, while waiting for spider to go back"
     action: interact
     x: 456
@@ -553,6 +650,8 @@ steps:
     x: 456
     y: 415
     dt: 2
+  - name: "con01-068 Spider out"
+    action: screen
   - name: "Walk to mana crystal"
     action: walk
     ang: 0.3
@@ -560,19 +659,157 @@ steps:
   - name: "Cast heal"
     action: cast
     slot: 2
+  - name: "con01-069 Mana restored"
+    action: screen
   - name: "Wait a bit to check that spider goes back"
     action: wait
     dt: 40
+  - name: "con01-070 Spider gone"
+    action: screen
   - name: "Run further"
     action: run-start
     ang: 0.78
     dt: 50
+  - name: "con01-071 Back in the room"
+    action: screen
   - name: "Cast pixies"
     action: cast
     slot: 1
   - action: run-dir
     ang: 0.75
     dt: 60
+  - name: "con01-072 Killed spider"
+    action: screen
+  - name: "Run to the closed door to check locking"
+    action: run-dir
+    ang: 0.25
+    dt: 80
+  - action: run-dir
+    ang: 0.15
+    dt: 40
+  - name: "con01-073 Locked door"
+    action: screen
+  - name: "Run back"
+    action: run-dir
+    ang: -0.75
+    dt: 50
+  - name: "Hit the urchin"
+    action: melee
+    ang: -0.75
+  - name: "con01-074 Hitting urchin"
+    action: screen
+  - action: melee
+    ang: -0.75
+    dt: 6
+  - action: run-dir
+    ang: -0.80
+    dt: 65
+  - action: run-dir
+    ang: 0.75
+    dt: 25
+  - name: "Run to the room to enable elevator"
+    action: run-dir
+    ang: 0.25
+    dt: 35
+  - name: "con01-075 Elevator room"
+    action: screen
+  - action: run-dir
+    ang: 0.50
+    dt: 10
+  - name: "Hit the spider"
+    action: melee
+    ang: -0.75
+  - name: "con01-076 Hit spider"
+    action: screen
+  - action: run-dir
+    ang: 0.50
+    dt: 40
+  - action: run-dir
+    ang: -0.15
+    dt: 15
+  - name: "Hit the bat"
+    action: melee
+    ang: 0.25
+  - name: "con01-077 Hit bat"
+    action: screen
+  - action: melee
+    ang: 0.25
+    dt: 6
+  - name: "Run and click the button"
+    action: run-dir
+    ang: -0.10
+    dt: 25
+  - name: "con01-078 Button enabled"
+    action: screen
+  - action: run-dir
+    ang: 0.9
+    dt: 30
+  - action: run-dir
+    ang: -0.5
+    dt: 45
+  - action: run-dir
+    ang: -0.75
+    dt: 35
+  - action: run-dir
+    ang: 0.75
+    dt: 20
   - action: run-stop
-  # TODO: we should check that door to the left is locked, since we unlocked the previous one
+  - name: "con01-079 Elevator up"
+    action: screen
+  - name: "Wait for the elevator"
+    action: wait
+    dt: 80
+  - action: walk
+    ang: 0.75
+    dt: 10
+  - name: "con01-080 On the elevator"
+    action: screen
+  - name: "Wait for the elevator to raise"
+    action: wait
+    dt: 60
+  - name: "Run further"
+    action: run-start
+    ang: 0.75
+    dt: 100
+  - action: run-dir
+    ang: 0.5
+    dt: 40
+  - action: run-dir
+    ang: 0.25
+    dt: 40
+  - name: "con01-081 Before potions"
+    action: screen
+  - action: run-dir
+    ang: -0.2
+    dt: 10
+  - action: run-stop
+  - name: "Pickup health potion"
+    action: interact
+    x: 464
+    y: 371
+  - action: run
+    ang: 0.0
+    dt: 40
+  - name: "Pickup mana potion"
+    action: interact
+    x: 576
+    y: 369
+  - action: run-start
+    ang: -0.25
+    dt: 70
+  - name: "con01-082 Picked potions"
+    action: screen
+  - action: run-dir
+    ang: 0.15
+    dt: 30
+  - name: "con01-083 Gate"
+    action: screen
+    dt: 2
+  - name: "con01-084 Loading"
+    action: screen
+    dt: 1
+  - name: "con01-085 Map switch"
+    action: screen
+    dt: 1
+  - action: run-stop
   - action: quit
